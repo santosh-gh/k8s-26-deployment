@@ -20,4 +20,4 @@ spec:
       ports:
       - port: 80
         targetPort: 8080
-      replicas: 4
+      replicas: 1

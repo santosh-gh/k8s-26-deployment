@@ -8,7 +8,7 @@ spec:
   releaseName: helmchart
   chart:
     spec:
-      chart: ./multi-helmchart/store-front
+      chart: ./multi-helmchart/store-front/
       sourceRef:
         kind: GitRepository
         name: flux-system

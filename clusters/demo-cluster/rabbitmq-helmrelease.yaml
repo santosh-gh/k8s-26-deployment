@@ -8,7 +8,7 @@ spec:
   releaseName: helmchart
   chart:
     spec:
-      chart: ./multi-helmchart/rabbitmq
+      chart: ./multi-helmchart/rabbitmq/
       sourceRef:
         kind: GitRepository
         name: flux-system

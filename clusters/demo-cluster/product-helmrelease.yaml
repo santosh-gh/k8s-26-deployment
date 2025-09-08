@@ -13,3 +13,12 @@ spec:
         kind: GitRepository
         name: flux-system
         namespace: flux-system
+  values:
+    productService:
+      nodeSelector:
+        kubernetes.io/os: linux
+      ports:
+      - name: http
+        port: 3002
+        targetPort: 3002
+      replicas: 1

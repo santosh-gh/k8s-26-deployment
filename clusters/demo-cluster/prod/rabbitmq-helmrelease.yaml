@@ -1,0 +1,23 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: rabbitmq
+  namespace: prod
+spec:
+  interval: 1m
+  releaseName: rabbitmq
+  chart:
+    spec:
+      chart: ./multi-helmchart/rabbitmq/
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+        namespace: flux-system
+  values:
+    rabbitmq:
+      nodeSelector:
+        kubernetes.io/os: linux
+      replicas: 1
+      
+
+

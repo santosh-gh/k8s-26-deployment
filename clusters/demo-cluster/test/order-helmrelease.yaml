@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: order
-  namespace: dev
+  namespace: test
 spec:
   interval: 1m
   releaseName: order
@@ -39,6 +39,6 @@ spec:
       - name: http
         port: 3000
         targetPort: 3000
-      replicas: 2
+      replicas: 4
 
 

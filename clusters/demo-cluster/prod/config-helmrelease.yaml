@@ -1,0 +1,15 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: config
+  namespace: prod
+spec:
+  interval: 1m
+  releaseName: config
+  chart:
+    spec:
+      chart: ./multi-helmchart/config/
+      sourceRef:
+        kind: GitRepository
+        name: flux-system
+        namespace: flux-system

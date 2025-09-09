@@ -1,23 +1,23 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: store-front
+  name: rabbitmq
   namespace: dev
 spec:
   interval: 1m
-  releaseName: store-front
+  releaseName: rabbitmq
   chart:
     spec:
-      chart: ./multi-helmchart/store-front/
+      chart: ./multi-helmchart/rabbitmq/
       sourceRef:
         kind: GitRepository
         name: flux-system
         namespace: flux-system
   values:
-    storeFront:
+    rabbitmq:
       nodeSelector:
         kubernetes.io/os: linux
-      ports:
-      - port: 80
-        targetPort: 8080
-      replicas: 2
+      replicas: 1
+      
+
+

@@ -1,5 +1,4 @@
-# Part 24: Deploying microservice applications in kubernetes multiple enverinments using FluxCD and Kustomize
-
+# Part 26: Deploying microservice applications in kubernetes multiple enverinments using Helm and Flux CD
     Part1:   Manual Deployment (AzCLI + Docker Desktop + kubectl)  
     GitHub:  https://github.com/santosh-gh/k8s-01
     YouTube: https://youtu.be/zoJ7MMPVqFY
@@ -213,6 +212,21 @@
     GitHub:  https://github.com/santosh-gh/k8s-21-development.git     
     GitHub:  https://github.com/santosh-gh/k8s-24-deployment.git
     YouTube: https://studio.youtube.com/video/hdxo5uw35vs/edit
+
+    Part25: GitOps using Flux (Microservice deployment using Flux, Helm Chart)             
+             Single Helm Chart with multiple Microservices
+
+    GitHub:  https://github.com/santosh-gh/k8s-21-development.git     
+    GitHub:  https://github.com/santosh-gh/k8s-25-deployment.git
+    YouTube: https://studio.youtube.com/video/hdxo5uw35vs/edit  
+
+    Part26: GitOps using Flux (Microservice deployment using Flux, Helm Chart)             
+            Helm Chart with multiple Microservices
+            Deploy into multiple environments dev, test and prod
+
+    GitHub:  https://github.com/santosh-gh/k8s-21-development.git     
+    GitHub:  https://github.com/santosh-gh/k8s-26-deployment.git
+    YouTube: https://studio.youtube.com/video/hdxo5uw35vs/edit  
 
 # Architesture
 

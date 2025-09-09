@@ -327,7 +327,7 @@
     Configure Flux to reconcile manifests underclusters/demo-cluster/
     
     
-  kubectl get pods -n flux-system
+  k get pods -n flux-system
   k get all -n flux-system
 
 # FluxCD Components
